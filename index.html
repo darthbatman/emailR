@@ -1,0 +1,107 @@
+<html>
+
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+		<title>emailR</title>
+		<style>
+			html, body {
+				padding: 0;
+				margin: 0;
+			}
+			body {
+				background-color: #2c3e50;
+			}
+			p {
+				font-family: 'Jura', sans-serif;
+				white-space: pre;
+				text-align: center;
+				font-size: 40px;
+				color: white;
+			}
+			.important-text {
+				font-family: 'Jura', sans-serif;
+				text-align: center;
+				color: white;
+			}
+			#theSubmitButton {
+				font-family: 'Jura', sans-serif;
+				font-size: 50px;
+				height: 100px;
+				width: 400px;
+				background-color: #34495e;
+				border: 0px solid red;
+				color: white;
+				border-radius: 8px;
+			}
+			textarea {
+				height: 200px;
+				width: 400px;
+				background-color: #34495e;
+				border:0px solid red;
+				resize: none;
+				border-radius: 8px;
+				color: white;
+				font-family: 'Jura', sans-serif;
+				font-size: 24px;
+			}
+			.tinput {
+				font-family: 'Jura', sans-serif;
+				width: 400px;
+				height: 32px;
+				font-size: 24px;
+				background-color: #34495e;
+				border:0px solid red;
+				color: whitesmoke;
+				border-radius: 4px;
+			}
+			img {
+				height: 120px;
+				width: 120px;
+			}
+			#left-div {
+				height: 64%;
+				width: 50%;
+				position: absolute;
+				bottom: 0;
+			}
+			#right-div {
+				height: 64%;
+				width: 50%;
+				left: 50%;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+			}
+		</style>
+		<link rel="icon"
+      type="image/png"
+      href="http://www.clker.com/cliparts/2/Q/y/3/l/B/email-icon-md.png">
+	</head>
+
+	<body>
+		<div id="left-div">
+			<form action="https://shrouded-depths-3827.herokuapp.com/send" method="post" id="emailForm">
+				<p>From:          <input class="tinput" name="from" type="text"/></p>
+				<p>To:               <input class="tinput" name="to" type="text"/></p>
+				<p>Subject:      <input class="tinput" name="subject" type="text"/></p>
+				<p><input id="theSubmitButton" type="submit" value="Submit"/></p>
+			</form>
+		</div>
+		<div id="right-div">
+			<p>Message:    <p><textarea name="content" form="emailForm"></textarea></p></p>
+		</div>
+		<p><img src="http://www.clker.com/cliparts/2/Q/y/3/l/B/email-icon-md.png"/></p>
+		<h1 class="important-text">emailR</h1>
+		<h2 class="important-text">Email From Anyone, To Anyone</h2>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+			});
+		</script>
+
+	</body>
+
+</html>
